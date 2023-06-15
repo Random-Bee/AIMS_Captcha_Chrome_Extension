@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "AIMS Captcha",
+    "version": "0.1.0",
+    "permissions": [
+        "tabs",
+        "storage"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["https://aims.iith.ac.in/aims/", "https://aims.iith.ac.in/aims/login/loginHome"],
+            "js": ["src/content.js"]
+        }
+    ],
+    "background": {
+        "service_worker": "src/service_worker.js"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
