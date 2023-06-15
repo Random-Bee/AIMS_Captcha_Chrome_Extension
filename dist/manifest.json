@@ -3,8 +3,7 @@
     "name": "AIMS Captcha",
     "version": "0.1.0",
     "permissions": [
-        "tabs",
-        "storage"
+        "tabs"
     ],
     "content_scripts": [
         {
